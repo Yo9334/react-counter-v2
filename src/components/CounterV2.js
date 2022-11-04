@@ -1,5 +1,10 @@
-const CounterV2 = ({ counter, setCounter }) => {
-  console.log(counter, setCounter);
+const CounterV2 = ({ counter, setCounters, counters, index }) => {
+  // console.log(counter, setCounters, "ici : ", counters);
+
+  // aide ??? : counters[index] += 1;
+  // copie du Tab 'counters'
+  // changer la valeur de l element à l'index 'index' de la copie
+  // setCounters(copie modifiee)
 
   return (
     <div className="container">
@@ -12,7 +17,9 @@ const CounterV2 = ({ counter, setCounter }) => {
           <button
             className={counter <= 0 ? "hidden" : "block"}
             onClick={() => {
-              setCounter(counter - 1);
+              const newTab = [...counters];
+              newTab[index] -= 1;
+              setCounters(newTab);
             }}
           >
             -
@@ -30,7 +37,9 @@ const CounterV2 = ({ counter, setCounter }) => {
           <button
             className={counter > 9 ? "hidden" : "block"}
             onClick={() => {
-              setCounter(counter + 1);
+              const newTab = [...counters];
+              newTab[index] += 1;
+              setCounters(newTab);
             }}
           >
             +
@@ -42,7 +51,9 @@ const CounterV2 = ({ counter, setCounter }) => {
       <div className="item-reset">
         <button
           onClick={() => {
-            setCounter(0);
+            const newTab = [...counters];
+            newTab[index] = 0;
+            setCounters(newTab);
           }}
         >
           Reset

@@ -103,10 +103,10 @@ header .logo {
 }
 
 .item-add-counter {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .add-counter {
