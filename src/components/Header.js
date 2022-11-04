@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <div>
         <FontAwesomeIcon icon="calculator" className="logo" />
-        <span>React Counter</span>
+        <span>React Counter V2</span>
       </div>
     </header>
   );

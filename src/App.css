@@ -6,7 +6,6 @@ body {
 }
 
 .container {
-  min-height: 75vh;
   margin: 0 auto;
 }
 
@@ -29,6 +28,11 @@ header .logo {
 }
 
 /* Main */
+.list-counter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .list-item {
   display: flex;
   justify-content: center;
@@ -96,6 +100,21 @@ header .logo {
 }
 .block {
   display: block;
+}
+
+.item-add-counter {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.add-counter {
+  background-color: #5c48d3;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* Footer */
